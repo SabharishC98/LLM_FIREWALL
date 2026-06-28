@@ -25,7 +25,7 @@ Your App ──► Lurien Matrix Proxy ──► OpenAI / Gemini / Claude / Groq
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: Python FastAPI, httpx (async proxy engine), Motor (async MongoDB driver), Redis (sliding-window rate limiter)
 - **ML Classifier**: Locally hosted fine-tuned DistilBERT checkpoint (Sequence Classification)
@@ -34,7 +34,7 @@ Your App ──► Lurien Matrix Proxy ──► OpenAI / Gemini / Claude / Groq
 
 ---
 
-## 🚀 Quick Start (Node.js SDK)
+## Quick Start (Node.js SDK)
 
 ### Installation
 ```bash
@@ -80,7 +80,7 @@ const response = await fw.openai.chat.completions.create({
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 lurien-matrix/
@@ -104,7 +104,7 @@ lurien-matrix/
 
 ---
 
-## 💻 Running Locally
+## Running Locally
 
 ### Backend Setup
 1. Move to backend directory:
