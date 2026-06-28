@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lurien — Real-time prompt injection detection and blocking for LLM APIs. Open-source security layer with 6-layer ML pipeline." />
+    <meta property="og:title" content="Lurien Matrix" />
+    <meta property="og:description" content="Real-time prompt injection detection and blocking for LLM APIs." />
+    <!-- Content Security Policy: Strict but allows React to run, fonts from Google, and connections to backend API -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://localhost:* https://localhost:* ws://localhost:* wss://localhost:* http://127.0.0.1:* https://127.0.0.1:* https://*.hf.space; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https://*;" />
+    
+    <title>Lurien Matrix</title>
+    
+    <!-- Preload fonts to avoid flicker -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <link rel="icon" type="image/png" href="/logo.png" />
+  </head>
+  <body class="bg-firewall-bg text-firewall-text">
+    <noscript>
+      <div style="padding: 2rem; color: #fff; background: #E63946; font-family: sans-serif; text-align: center;">
+        <strong>JavaScript is required.</strong> Please enable JavaScript to run the Lurien Dashboard.
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

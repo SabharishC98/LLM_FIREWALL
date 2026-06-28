@@ -1,0 +1,26 @@
+{
+  "name": "llm-firewall",
+  "version": "1.0.0",
+  "description": "Production-grade firewall proxy client for LLM APIs. Intercepts and blocks prompt injections.",
+  "main": "src/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "keywords": [
+    "llm",
+    "firewall",
+    "security",
+    "prompt-injection",
+    "openai",
+    "gemini",
+    "anthropic",
+    "middleware",
+    "express"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "peerDependencies": {
+    "express": "^4.0.0"
+  }
+}
