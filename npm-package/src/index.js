@@ -2,12 +2,12 @@ const { createMiddleware } = require('./middleware');
 const { createProxyClient } = require('./proxy');
 const { FirewallBlockedError } = require('./errors');
 
-class LLMFirewall {
+class LurienMatrix {
   /**
-   * Initialize LLM Firewall SDK
+   * Initialize Lurien Matrix SDK
    * @param {Object} options
    * @param {string} options.apiKey - Firewall API Key (required)
-   * @param {string} [options.baseUrl] - Base URL (default: "https://llmfirewall.dev")
+   * @param {string} [options.baseUrl] - Base URL (default: "https://imdrizzle-lurien-matrix.hf.space")
    * @param {number} [options.threshold] - Default risk threshold (default: 0.50)
    * @param {string} [options.mode] - Mode: "check" | "proxy" (default: "check")
    * @param {string} [options.provider] - Provider: "openai" | "gemini" | "anthropic" | "groq"
@@ -22,7 +22,7 @@ class LLMFirewall {
     }
 
     this.options = {
-      baseUrl: "https://llmfirewall.dev",
+      baseUrl: "https://imdrizzle-lurien-matrix.hf.space",
       threshold: 0.50,
       mode: "check",
       timeout: 5000,
@@ -129,6 +129,6 @@ class LLMFirewall {
 }
 
 module.exports = {
-  LLMFirewall,
+  LurienMatrix,
   FirewallBlockedError,
 };

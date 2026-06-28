@@ -19,3 +19,4 @@ onnx==1.17.0
 sentence-transformers==3.4.0
 faiss-cpu==1.9.0
 scikit-learn==1.6.0
+datasets==3.2.0
